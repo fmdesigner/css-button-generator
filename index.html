@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>CSS Button Generator</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    
+    <i class="fa-light fa-copy"></i>
+    <div class="wrapper">
+        <h1>CSS Button <span>Generator</span></h1>
+        <h2>Fill in the blanks and copy the css style</h2>
+
+        <section class="generator">
+            <div class="container-generator">
+                <form action="" id="controles">
+
+                    <div><label for="text">Text</label>
+                        <input type="text" name="text" id="text" placeholder="Click">
+                    </div>
+
+                    <div><label for="fontSize">Font Size</label>
+                        <input type="number" min="15" id="fontSize" name="fontSize" placeholder="14 px">
+                    </div>
+
+                    <div><label for="fontFamily">Font Family</label>
+                        <select name="fontFamily" name="fontFamily" id="fontFamily">
+
+                            <option hidden="" value="">Select Google Font</option>
+                            <option value="Montserrat">Montserrat</option>
+                            <option value="Outfit">Outfit</option>
+                            <option value="Roboto">Roboto</option>
+                            <option value="Roboto Slab">Roboto Slab</option>
+                            <option value="Lato">Lato</option>
+
+                        </select>
+                    </div>
+
+                    <div>
+                        <label for="color">Font Color</label>
+                        <input type="color" name="color" id="color" value="#ffffff">
+                    </div>
+
+                    <div><label for="fontWeight">Font Weight</label>
+                        <select name="fontWeight" name="fontWeight" id="fontWeight">
+
+                            <option hidden="" value="">Select font-weight</option>
+                            <option value="lighter">lighter</option>
+                            <option value="normal">normal</option>
+                            <option value="bold">bold</option>
+                            <option value="bolder">bolder</option>
+
+                        </select>
+                    </div>
+
+                    <div><label for="backgroundColor">Background Color</label>
+                        <input type="color" name="backgroundColor" name="backgroundColor" id="backgroundColor" value="#BE67FF">
+                    </div>
+
+                    <div>
+                        <label for="width">Width</label>
+                        <input type="range" name="width" id="width" min="0" max="300">
+                    </div>
+
+                    <div>
+                        <label for="height">Height</label>
+                        <input type="range" name="height" id="height" min="0" max="200">
+                    </div>
+
+                    <div class="border"><label for="border">Border</label>
+                        <input type="number" min="1" id="border" name="border" placeholder="2px">
+                        <select name="borderStyle" name="borderStyle" id="borderStyle">
+                            <option hidden="" value="">style</option>
+                            <option value="solid">solid</option>
+                            <option value="dotted">dotted</option>
+                            <option value="dashed">dashed</option>
+                        </select>
+
+
+                        <input type="color" name="borderColor" name="borderColor" id="borderColor" value="#694484">
+
+                    </div>
+
+                    <div>
+                        <label for="borderRadius">Border Radius</label>
+                        <input type="range" name="borderRadius" id="borderRadius">
+                    </div>
+
+                    <div><label for="cursor">Cursor</label>
+                        <select name="cursor" name="cursor" id="cursor">
+                            <option hidden="" value="">Select cursor</option>
+                            <option value="default">default</option>
+                            <option value="pointer">pointer</option>
+                            <option value="auto">auto</option>
+                            <option value="no-drop">no-drop</option>
+                        </select>
+                    </div>
+                    
+                    <div><label for="transition">Transition</label>
+                        <select name="transition" name="transition" id="transition">
+                            <option hidden="" value="">Select</option>
+                            <option value="all 0.1s ease 0.1s">0,1 seg</option>
+                            <option value="all 0.2s ease 0.1s">0,2 seg</option>
+                            <option value="all 0.3s ease 0.1s">0,3 seg</option>
+                        </select>
+                    </div>                                
+                </form>
+
+                <!-- Bônus -->
+                <div><label for="hover">Hover Effect</label>
+                    <select name="hover" name="hover" id="hover">
+                        <option hidden="" value="">None</option>
+                        <option value="Opacity">Opacity</option>
+                        <option value="Scale">Scale</option>
+                        <option value="Translate">Translate</option>
+                    </select>
+                </div>
+
+            </div>
+
+            <!-- Resultado -->
+            <div class="resultado">
+                <div class="preview">
+                    <h3><span>Button</span> <br> Preview</h3>
+                    <button class="btn">Click</button>
+                </div>
+
+                <div class="box">
+                    <h4>HTML</h4>
+                    <button class="copy"><?xml version="1.0" encoding="UTF-8"?>
+                        <svg id="Camada_2" data-name="Camada 2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 72.99 72.49">
+                          <defs>
+                            <style>
+                              .cls-1 {
+                                fill: url(#linear-gradient-2);
+                              }
+                        
+                              .cls-2 {
+                                fill: url(#linear-gradient);
+                              }
+                            </style>
+                            <linearGradient id="linear-gradient" x1="29.43" y1="-467.9" x2="29.43" y2="2012.84" gradientUnits="userSpaceOnUse">
+                              <stop offset="0" stop-color="#935c99"/>
+                              <stop offset="1" stop-color="#666aff"/>
+                            </linearGradient>
+                            <linearGradient id="linear-gradient-2" x1="43.56" y1="-467.9" x2="43.56" y2="2012.84" xlink:href="#linear-gradient"/>
+                          </defs>
+                          <g id="Object">
+                            <g>
+                              <path class="cls-2" d="m57.87,72.49H1c-.55,0-1-.45-1-1V15.34c0-.55.45-1,1-1h56.87c.55,0,1,.45,1,1v56.16c0,.55-.45,1-1,1Zm-55.87-2h54.87V16.34H2v54.16Z"/>
+                              <path class="cls-1" d="m71.99,58.16h-14.12c-.55,0-1-.45-1-1s.45-1,1-1h13.12V2H16.12v13.34c0,.55-.45,1-1,1s-1-.45-1-1V1c0-.55.45-1,1-1h56.87c.55,0,1,.45,1,1v56.16c0,.55-.45,1-1,1Z"/>
+                            </g>
+                          </g>
+                        </svg>Copy</button>
+                    <pre>
+                    <code class="html"></code>
+                </pre>
+                </div>
+
+                <div class="box">
+                    <h4>CSS</h4>
+                    <button class="copy"><?xml version="1.0" encoding="UTF-8"?>
+                        <svg id="Camada_2" data-name="Camada 2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 72.99 72.49">
+                          <defs>
+                            <style>
+                              .cls-1 {
+                                fill: url(#linear-gradient-2);
+                              }
+                        
+                              .cls-2 {
+                                fill: url(#linear-gradient);
+                              }
+                            </style>
+                            <linearGradient id="linear-gradient" x1="29.43" y1="-467.9" x2="29.43" y2="2012.84" gradientUnits="userSpaceOnUse">
+                              <stop offset="0" stop-color="#935c99"/>
+                              <stop offset="1" stop-color="#666aff"/>
+                            </linearGradient>
+                            <linearGradient id="linear-gradient-2" x1="43.56" y1="-467.9" x2="43.56" y2="2012.84" xlink:href="#linear-gradient"/>
+                          </defs>
+                          <g id="Object">
+                            <g>
+                              <path class="cls-2" d="m57.87,72.49H1c-.55,0-1-.45-1-1V15.34c0-.55.45-1,1-1h56.87c.55,0,1,.45,1,1v56.16c0,.55-.45,1-1,1Zm-55.87-2h54.87V16.34H2v54.16Z"/>
+                              <path class="cls-1" d="m71.99,58.16h-14.12c-.55,0-1-.45-1-1s.45-1,1-1h13.12V2H16.12v13.34c0,.55-.45,1-1,1s-1-.45-1-1V1c0-.55.45-1,1-1h56.87c.55,0,1,.45,1,1v56.16c0,.55-.45,1-1,1Z"/>
+                            </g>
+                          </g>
+                        </svg>Copy</button>
+                    <pre>
+                    <code class="css">
+                      <span>button {</span>
+                              <span class="css-result"></span>
+                      <span>}</span>
+                    </code>
+                    <code class="css-hover" style="display: none;">
+                      <span>button:hover {</span>
+                              <span class="css-result"></span>
+                      <span>}</span>
+                    </code>
+                </pre>
+                </div>
+
+                <div class="box">
+                    <h4>Google Fonts</h4>
+                    <button class="copy"><?xml version="1.0" encoding="UTF-8"?>
+                        <svg id="Camada_2" data-name="Camada 2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 72.99 72.49">
+                          <defs>
+                            <style>
+                              .cls-1 {
+                                fill: url(#linear-gradient-2);
+                              }
+                        
+                              .cls-2 {
+                                fill: url(#linear-gradient);
+                              }
+                            </style>
+                            <linearGradient id="linear-gradient" x1="29.43" y1="-467.9" x2="29.43" y2="2012.84" gradientUnits="userSpaceOnUse">
+                              <stop offset="0" stop-color="#935c99"/>
+                              <stop offset="1" stop-color="#666aff"/>
+                            </linearGradient>
+                            <linearGradient id="linear-gradient-2" x1="43.56" y1="-467.9" x2="43.56" y2="2012.84" xlink:href="#linear-gradient"/>
+                          </defs>
+                          <g id="Object">
+                            <g>
+                              <path class="cls-2" d="m57.87,72.49H1c-.55,0-1-.45-1-1V15.34c0-.55.45-1,1-1h56.87c.55,0,1,.45,1,1v56.16c0,.55-.45,1-1,1Zm-55.87-2h54.87V16.34H2v54.16Z"/>
+                              <path class="cls-1" d="m71.99,58.16h-14.12c-.55,0-1-.45-1-1s.45-1,1-1h13.12V2H16.12v13.34c0,.55-.45,1-1,1s-1-.45-1-1V1c0-.55.45-1,1-1h56.87c.55,0,1,.45,1,1v56.16c0,.55-.45,1-1,1Z"/>
+                            </g>
+                          </g>
+                        </svg>Copy</button>
+                    <pre>
+                   <code class="google-font"></code>   
+                </pre>
+                    <p>To embed a font, copy the code into the <code>head</code> of your html</p>
+                </div>
+
+            </div>
+        </section> 
+    </div>
+    
+    <footer>
+        <div class="wrapper">
+            <p>By: Fernanda Mendes</p>
+        </div>
+    </footer>
+    
+   <script src="js/scripts.js"></script>
+</body>
+</html>
